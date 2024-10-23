@@ -1,0 +1,64 @@
+.rodape {
+	background-color: #ffe8e6; /* DEFINE A COR DO FUNDO */
+	display: flex; /* DEFINE A CAIXA COMO FLEXÍVEL */
+	justify-content: space-around; /* DEFINE O ESPAÇAMENTO ENTRE OS ITENS */
+	align-items: center; /* DEFINE O ALINHAMENTO DOS ITENS AO CENTRO */
+	margin-top: 50px; /* DEFINE A MARGEM DO TOPO */
+	border-radius: 33px; /* DEFINE O ARREDONDAMENTO DAS BORDAS */
+	padding: 10px; /* DEFINE A MARGEM INTERNA */
+}
+
+/* CONFIGURAÇÃO DA FONTE DOS DIREITOS DO RODAPÉ */
+
+#direitos {
+	display: flex; /* DEFINE COMO CAIXA FLEXÍVEL */
+	justify-content: center; /* DEFINE O ESPAÇAMENTO DOS ITENS */
+	margin-top: 17px; /* DEFINE A MARGEM DO TOPO */
+	font-family: "Manrope"; /* DEFINE A FONTE DO TEXTO */
+}
+
+/* CONFIGURAÇÃO DOS H3 DO RODAPÉ */
+
+.rodape h3 {
+	font-size: 27px; /* DEFINE O TAMANHO DA FONTE */
+	font-family: "Manrope"; /* DEFINE A FONTE DO TEXTO */
+	margin-top: 10px; /* DEFINE A MARGEM DO TOPO */
+}
+
+/* CONFIGURAÇÃO DOS P DO RODAPÉ */
+
+.rodape p {
+	font-family: "Manrope"; /* DEFINE A FONTE DO TEXTO */
+	font-size: 15px; /* DEFINE O TAMANHO DA FONTE */
+	text-decoration: underline;
+}
+
+/* CONFIGURAÇÃO DO ÍCONE DO TIKTOK */
+
+#ttk {
+	margin-bottom: -5px; /* DEFINE A MARGEM DE BAIXO */
+}
+
+/* CONFIGURAÇÃO DO ÍCONE 1 DO WHATSAPP */
+
+#wpp1 {
+	margin-bottom: -7px; /* DEFINE A MARGEM DE BAIXO */
+}
+
+/* CONFIGURAÇÃO DO ÍCONE 2 DO WHATSAPP */
+
+#wpp2 {
+	margin-bottom: -8px; /* DEFINE A MARGEM DE BAIXO */
+}
+
+/* CONFIGURAÇÃO DAS REDES DO RODAPÉ */
+
+#redes {
+	margin-top: -20px; /* DEFINE A MARGEM DO TOPO */
+}
+
+/* CONFIGURAÇÃO DE ATENDIMENTO DO RODAPÉ */
+
+#atend {
+	margin-top: -10px; /* DEFINE A MARGEM DO TOPO */
+}

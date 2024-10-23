@@ -1,0 +1,76 @@
+.produto {
+	display: flex; /* DEIXA A CAIXA FLEXÍVEL */
+	justify-content: space-evenly; /* DEFINE O ESPAÇAMENTO DOS ITENS DENTRO DA DIV */
+	align-items: center; /* ALINHA OS ITENS AO CENTRO */
+	height: 400px;
+}
+
+.cards-produto {
+	box-shadow: 0 0 20px rgba(93, 93, 93, 0.2); /* DEFINE A SOMBRA DA DIV */
+	border-radius: 33px; /* DEFINE O ARREDONDAMENTO DA BORDA */
+	height: 300px; /* DEFINE A ALTURA DO CARD */
+	width: 200px; /* DEFINE A LARGURA DO CARD */
+	text-align: left; /* DEFINE QUE O TEXTO SERÁ ALINHADO A ESQUERDA */
+	display: flex; /* DEFINE COMO CAIXA FLEXÍVEL */
+	padding: 14px; /* DEFINE A MARGEM INTERNA */
+	margin-bottom: 15px; /* DEFINE A MARGEM DE BAIXO */
+	flex: 0 0 auto;
+	margin-right: 20px;
+	margin-left: 20px;
+	transition: transform 0.3s ease; /* DEFINE A VELOCIDADE DA ANIMAÇÃO POSTA */
+	flex-wrap: wrap;
+}
+
+.anterior,
+.proximo {
+	margin-top: 10px;
+}
+
+.cards-produto:hover {
+	transform: scale(1.1); /* DEFINE A ESCALA QUE A ANIMAÇÃO VAI CRESCER */
+}
+
+/* CONFIGURAÇÃO DAS IMAGENS DO CARD */
+
+.cards-produto img {
+	width: 190px; /* DEFINE A LARGURA DA IMAGEM */
+	height: 190px; /* DEFINE A ALTURA DA IMAGEM */
+}
+
+/* CONFIGURAÇÃO DA NEW-2 */
+
+#new-2 {
+	width: 206px; /* DEFINE A LARGURA DA IMAGEM */
+	height: 103px; /* DEFINE A ALTURA DA IMAGEM */
+	margin-bottom: 40px; /* DEFINE A MARGEM DE BAIXO DA IMAGEM */
+	margin-top: 50px; /* DEFINE A MARGEM DO TOPO DA IMAGEM */
+}
+
+/* CONFIGURAÇÃO DO TEXT */
+
+.nome-produto {
+	font-family: "Manrope"; /* DEFINE A FONTE DO TEXTO */
+	font-size: 18px; /* DEFINE O TAMANHO DA FONTE */
+}
+
+/* CONFIGURAÇÃO DA FONTE DA PARCELA */
+
+.parcela {
+	font-size: 15px; /* DEFINE O TAMANHO DA FONTE */
+	font-family: "Manrope"; /* DEFINE A FONTE DO TEXTO */
+}
+
+/* CONFIGURAÇÃO DA FONTE DO CÓDIGO */
+
+.codigo {
+	font-size: 13px; /* DEFINE O TAMANHO DA FONTE */
+	font-family: "Manrope"; /* DEFINE A FONTE DO TEXTO */
+	color: grey; /* DEFINE A COR DA FONTE */
+	width: 500px;
+}
+
+/* CONFIGURAÇÃO DOS P DENTRO DOS CARDS */
+
+.cards-produto div p {
+	margin-top: 100px; /* DEFINE A MARGEM DO TOPO */
+}

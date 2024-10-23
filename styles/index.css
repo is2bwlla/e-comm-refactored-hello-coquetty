@@ -1,0 +1,16 @@
+section h2 {
+	display: flex; /* DEFINE COMO CAIXA FLEXÍVEL */
+	justify-content: center; /* DEFINE A CENTRALIZAÇÃO */
+	font-size: 35px; /* DEFINE O TAMANHO DA FONTE */
+	font-family: "Manuale"; /* DEFINE A FONTE DO TEXTO */
+	color: #fec9c3; /* DEFINE A COR DO TEXTO */
+	margin-bottom: 20px; /* DEFINE A MARGEM DE BAIXO */
+	margin-top: 20px; /* DEFINE A MARGEM DO TOPO */
+}
+
+.cartaz {
+	margin-top: 20px; /* DEFINE A MARGEM DO TOPO */
+	margin-bottom: 20px; /* DEFINE A MARGEM DE BAIXO */
+	justify-content: center; /* DEFINE A CENTRALIZAÇÃO */
+	display: flex; /* DEFINE COMO CAIXA FLEXÍVEL */
+}

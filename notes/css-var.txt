@@ -1,0 +1,26 @@
+-- CRIANDO A VARIÁVEL:
+
+:root {
+    --primary-color: #3498db; /* Azul */
+    --secondary-color: #2ecc71; /* Verde */
+    --font-size: 16px; /* Tamanho da fonte */
+}
+
+-- USANDO A VARIÁVEL:
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: var(--font-size);
+}
+
+-- ALTERAR VARIÁVEL:
+
+.button {
+    background-color: var(--primary-color);
+}
+
+.button:hover {
+    --primary-color: #2980b9; /* Altera a cor ao passar o mouse */
+    background-color: var(--primary-color);
+}

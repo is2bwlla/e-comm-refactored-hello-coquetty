@@ -1,0 +1,35 @@
+-- MOBILE (dispositivos pequenos):
+
+@media (max-width: 599px) { /* Estilos para dispositivos móveis */
+    /* Seu código CSS aqui */
+}
+
+-- TABLETS (dispositivos médios):
+
+@media (min-width: 600px) and (max-width: 899px) { /* Estilos para tablets */
+    /* Seu código CSS aqui */
+}
+
+-- LAPTOPS E DESKTOPS (dispositivos grandes):
+
+@media (min-width: 900px) { /* Estilos para laptops e desktops */
+    /* Seu código CSS aqui */
+}
+
+-- Extra small devices (ex: smartphones):
+
+@media (max-width: 480px) { /* Estilos para smartphones */
+    /* Seu código CSS aqui */
+}
+
+-- Medium devices (ex: tablets em modo paisagem):
+
+@media (min-width: 769px) and (max-width: 1024px) { /* Estilos para tablets em paisagem */
+    /* Seu código CSS aqui */
+}
+
+-- Large devices (ex: desktops):
+
+@media (min-width: 1025px) { /* Estilos para desktops */
+    /* Seu código CSS aqui */
+}

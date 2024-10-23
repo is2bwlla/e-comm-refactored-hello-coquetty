@@ -1,0 +1,19 @@
+x -- formatar o código html
+x -- separar o css
+x -- fazer variáveis com as cores e fonts
+x -- renomear as páginas
+x -- renomear as classes
+x -- verificar o uso das classes
+x -- renomear os id
+x -- renomear as pastas
+x -- deixar só o index na pasta raiz
+x -- deixar responsivo para celulares
+x -- deixar responsivo para tablets
+x -- deixar responsivo para desktops
+x -- passar td para inglês
+x -- terminar o carrinho
+
+formatados:
+- index.html
+- accessories.html (coloquei na pages)
+- toys.html ()
