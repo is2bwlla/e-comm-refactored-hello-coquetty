@@ -1,0 +1,172 @@
+/* CONFIGURAÇÕES DO MEU CABEÇALHO */
+
+.barra-pesquisa {
+	display: flex; /* DEFINE QUE MINHA CLASSE É UMA CAIXA FLEXÍVEL (RESPONSIVIDADE */
+	justify-content: space-around; /* DEFINE O ESPAÇAMENTO ENTRE AS DIVS DENTRO DA CLASSE */
+	align-items: center; /* DEFINE QUE OS ITENS CENTRALIZARÃO HORIZONTALMENTE UM COM O OUTRO E COM A CLASSE */
+}
+
+/* CONFIGURAÇÕES DAS IMAGENS DO MENU DE ACESSO */
+
+#menu-itens img {
+	width: 30px; /* DEFINE A LARGURA QUE ELES OCUPAM */
+	margin-left: 10px; /* DEFINE A MARGEM A ESQUERDA */
+	transition: all 0.5s ease; /* DEFINE A VELOCIDADE DA ANIMAÇÃO POSTA */
+}
+
+/* CONFIGURAÇÃO DO MENU DE ACESSO DO USUÁRIO */
+
+#menu-itens {
+	margin-left: -60px; /* DEFINE A MARGEM DA ESQUERDA */
+	margin-right: 40px; /* DEFINE A MARGEM DA DIREITA */
+	margin-top: 10px;
+	display: flex;
+}
+
+/* CONFIGURAÇÃO DE ANIMAÇÕES DOS ÍCONES DO MENU */
+
+#carrinho:hover {
+	transform: scale(1.3); /* DEFINE A ESCALA QUE A ANIMAÇÃO VAI CRESCER */
+}
+
+#favoritos:hover {
+	transform: scale(1.3); /* DEFINE A ESCALA QUE A ANIMAÇÃO VAI CRESCER */
+}
+
+#usuario:hover {
+	transform: scale(1.3); /* DEFINE A ESCALA QUE A ANIMAÇÃO VAI CRESCER */
+}
+
+/* CONFIGURAÇÕES DO MEU TÍTULO DO SITE */
+
+#titulo h1 {
+	font-size: 42px; /* DEFINE O TAMANHO QUE MINHA FONTE VAI TER */
+	margin-left: -72px; /* DEFINE A MARGEM A ESQUERDA */
+	font-family: "Arizonia"; /* DEFINE A FONTE QUE O TEXTO VAI TER */
+	color: #fec9c3; /* DEFINE COR DA FONTE DO MEU TÍTULO */
+	text-shadow: 1px 1px 2px gray;
+}
+
+/* CONFIGURAÇÕES DA DIV DA BARRA DE PESQUISA */
+
+#busca {
+	display: flex; /* DEFINE QUE MINHA DIV É UMA CAIXA FLEXÍVEL */
+}
+
+/* CONFIGURAÇÕES DO MINHA BARRA DE PESQUISA */
+
+#txtBusca {
+	width: 370px; /* DEFINE A LARGURA DA BARRA DE PESQUISA */
+	height: 28px; /* DEFINE A ALTURA DA BARRA DE PESQUISA */
+	border-radius: 20px; /* DEFINE A CURVATURA DA BORDA DA BARRA DE PESQUISA */
+	padding-left: 15px; /* DEFINE A MARGEM INTERNA DA BARRA DE PESQUISA (DISTANCIA O TEXTO DA BORDA) */
+	box-shadow: 9px 15px 10px -15px rgba(0, 0, 0, 0.1); /* DEFINE A POSIÇÃO E O BLUR DA SOMBRA */
+	color: grey; /* DEFINE A COR DO TEXTO ESCRITO DENTRO DO INPUT */
+	border: 1px solid #f08f84;
+}
+
+/* CONFIGURAÇÃO DA LUPA DA BARRA DE PESQUISA */
+
+#btnBusca {
+	width: 54px; /* DEFINE A LARGURA DA MINHA IMAGEM */
+	margin-left: -49px; /* DEFINE A MARGEM A ESQUERDA */
+	margin-top: -4px; /* DEFINE A MARGEM DO TOPO */
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 431px) {
+	#logo img {
+		width: 100px;
+	}
+
+	#titulo {
+		width: 100%;
+		height: auto;
+	}
+
+	#titulo h1 {
+		font-size: 27px;
+	}
+
+	#busca {
+		width: 10px;
+	}
+}
+
+/* Estilo para o menu hamburguer */
+.menu-hamburguer {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+	z-index: 10;
+  }
+  
+  .menu-hamburguer .bar {
+	width: 25px;
+	height: 3px;
+	margin: 4px;
+	background-color: #000;
+	transition: 0.4s;
+  }
+  
+  /* Quando o menu hambúrguer é ativado, as barras se transformam */
+  .menu-hamburguer.active .bar:nth-child(1) {
+	transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .menu-hamburguer.active .bar:nth-child(2) {
+	opacity: 0;
+  }
+  
+  .menu-hamburguer.active .bar:nth-child(3) {
+	transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  /* Estilo para o menu de navegação (ficará oculto inicialmente) */
+  .nav-categorias {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	z-index: 9;
+  }
+  
+  .nav-categorias ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .nav-categorias ul li {
+	margin: 20px 0;
+  }
+  
+  .nav-categorias a {
+	text-decoration: none;
+	color: #000;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+  }
+  
+  .nav-categorias a img {
+	margin-right: 10px;
+  }
+  
+  /* Quando o menu é aberto, ele aparece */
+  .nav-categorias.active {
+	display: block;
+  }
+  
+  /* Responsividade para o menu hamburguer */
+  @media (max-width: 768px) {
+	.menu-hamburguer {
+	  display: flex;
+	}
+  }
+  

@@ -3,6 +3,9 @@
 @import url("./footer.css");
 @import url("./carousel.css");
 @import url("./products.css");
+@import url("./cart.css");
+@import url("./header.css");
+@import url("./navbar.css");
 
 * {
 	padding: 0; /* DEFINE A MARGEM INTERNA TOTAL COMO 0 */
@@ -13,6 +16,8 @@
 
 body {
 	background-color: #fec9c3; /* DEFINE A COR DE FUNDO DO MEU SITE */
+	display: flex;
+	justify-content: center;
 }
 
 a {
@@ -25,269 +30,9 @@ a:visited {
 	color: currentColor; /* DEFINE QUE APÓS CLICAR NO LINK A COR NÃO MUDA */
 }
 
-.fundo {
-	background-color: #fff; /* DEFINE A COR DE FUNDO */
-	height: 80%; /* DEFINE A ALTURA DO MEU BACKGROUND */
-	width: 68%; /* DEFINE A LARGURA DO MEU BACKGROUND */
-	margin: auto; /* DEFINE A MARGEM EXTERIOR DO MEU BACKGROUND */
-	margin-top: 15px; /* DEFINE A MARGEM DO TOPO DO MEU BACKGROUND */
-	padding: 29px; /* DEFINE A MARGEM INTERIOR DO MEU BACKGROUND */
-	border-radius: 68px; /* DEFINE A CURVATURA DA BORDA DO MEU BACKGROUND */
-}
-
-/* CONFIGURAÇÕES DO MEU CABEÇALHO */
-
-.barra-pesquisa {
-	display: flex; /* DEFINE QUE MINHA CLASSE É UMA CAIXA FLEXÍVEL (RESPONSIVIDADE */
-	justify-content: space-around; /* DEFINE O ESPAÇAMENTO ENTRE AS DIVS DENTRO DA CLASSE */
-	align-items: center; /* DEFINE QUE OS ITENS CENTRALIZARÃO HORIZONTALMENTE UM COM O OUTRO E COM A CLASSE */
-}
-
-/* CONFIGURAÇÕES DAS IMAGENS DO MENU DE ACESSO */
-
-#menu-itens img {
-	width: 30px; /* DEFINE A LARGURA QUE ELES OCUPAM */
-	margin-left: 10px; /* DEFINE A MARGEM A ESQUERDA */
-	transition: all 0.5s ease; /* DEFINE A VELOCIDADE DA ANIMAÇÃO POSTA */
-}
-
-/* CONFIGURAÇÃO DO MENU DE ACESSO DO USUÁRIO */
-
-#menu-itens {
-	margin-left: -60px; /* DEFINE A MARGEM DA ESQUERDA */
-	margin-right: 40px; /* DEFINE A MARGEM DA DIREITA */
-	margin-top: 10px;
-	display: flex;
-}
-
-/* CONFIGURAÇÃO DE ANIMAÇÕES DOS ÍCONES DO MENU */
-
-#carrinho:hover {
-	transform: scale(1.3); /* DEFINE A ESCALA QUE A ANIMAÇÃO VAI CRESCER */
-}
-
-#favoritos:hover {
-	transform: scale(1.3); /* DEFINE A ESCALA QUE A ANIMAÇÃO VAI CRESCER */
-}
-
-#usuario:hover {
-	transform: scale(1.3); /* DEFINE A ESCALA QUE A ANIMAÇÃO VAI CRESCER */
-}
-
-/* CONFIGURAÇÕES DO MEU TÍTULO DO SITE */
-
-#titulo h1 {
-	font-size: 42px; /* DEFINE O TAMANHO QUE MINHA FONTE VAI TER */
-	margin-left: -72px; /* DEFINE A MARGEM A ESQUERDA */
-	font-family: "Arizonia"; /* DEFINE A FONTE QUE O TEXTO VAI TER */
-	color: #fec9c3; /* DEFINE COR DA FONTE DO MEU TÍTULO */
-	text-shadow: 1px 1px 2px gray;
-}
-
-/* CONFIGURAÇÕES DA DIV DA BARRA DE PESQUISA */
-
-#busca {
-	height: 80px; /* DEFINE A ALTURA DA MINHA DIV (PRECISEI DEFINIR PQ TAVA CONFLITANDO COM O TAMANHO DO CABEÇALHO */
-	margin-top: 55px; /* DEFINE A MARGEM DO TOPO */
-	margin-left: -45px; /* DEFINE A MARGEM A ESQUEDA */
-	display: flex; /* DEFINE QUE MINHA DIV É UMA CAIXA FLEXÍVEL */
-}
-
-/* CONFIGURAÇÕES DO MINHA BARRA DE PESQUISA */
-
-#txtBusca {
-	width: 370px; /* DEFINE A LARGURA DA BARRA DE PESQUISA */
-	height: 28px; /* DEFINE A ALTURA DA BARRA DE PESQUISA */
-	border-radius: 20px; /* DEFINE A CURVATURA DA BORDA DA BARRA DE PESQUISA */
-	padding-left: 15px; /* DEFINE A MARGEM INTERNA DA BARRA DE PESQUISA (DISTANCIA O TEXTO DA BORDA) */
-	box-shadow: 9px 15px 10px -15px rgba(0, 0, 0, 0.1); /* DEFINE A POSIÇÃO E O BLUR DA SOMBRA */
-	color: grey; /* DEFINE A COR DO TEXTO ESCRITO DENTRO DO INPUT */
-	border: 1px solid #f08f84;
-}
-
-/* CONFIGURAÇÃO DA LUPA DA BARRA DE PESQUISA */
-
-#btnBusca {
-	width: 54px; /* DEFINE A LARGURA DA MINHA IMAGEM */
-	margin-left: -49px; /* DEFINE A MARGEM A ESQUERDA */
-	margin-top: -4px; /* DEFINE A MARGEM DO TOPO */
-}
-
-/* CONFIGURAÇÃO DA MINHA AREA DE NAVEGAÇÃO */
-
-.nav-categorias {
-	background-color: #fec9c3; /* DEFINE A COR FO FUNDO DA MINHA AREA */
-	justify-content: space-around; /* DEFINE O ESPAÇAMENTO DOS ITENS DENTRO DA MINHA AREA */
-	align-items: center; /* DEFINE A CENTRALIZAÇÃO DOS ITENS */
-	display: flex; /* DEFINE COMO CAIXA FLEXÍVEL */
-	border-radius: 50px; /* DEFINE O ARREDONDAMENTO DAS BORDAS */
-}
-
-/* CONFIGURAÇÃO DO QUE TEM DENTRO DA NAVEGAÇÃO */
-
-.nav-categorias ul {
-	display: flex; /* DEFINE COMO CAIXA FLEXÍVEL */
-	font-family: "Carattere"; /* DEFINE A FONTE DO TEXTO */
-	font-size: 40px; /* DEFINE O TAMANHO DO TEXTO */
-	align-items: center; /* DEFINE A CENTRALIZAÇÃO */
-}
-
-/* CONFIGURAÇÃO DO LI DA MINHA NAVEGAÇÃO */
-
-.nav-categorias li {
-	margin-left: 80px; /* DEFINE A MARGEM A ESQUERDA */
-	display: flex; /* DEFINE COMO CAIXA FLEXÍVEL */
-	justify-content: center; /* DEFINE O ESPAÇAMENTO DOS ITENS */
-	align-items: center; /* DEFINE O ALINHAMENTO DOS ITENS AO CENTRO */
-	transition: all 0.5s ease; /* DEFINE A VELOCIDADE DA ANIMAÇÃO POSTA */
-}
-
-.nav-categorias li span {
-	margin-top: 8px; /* DEFINE A MARGEM DO TOPO */
-}
-
-.nav-categorias li:hover {
-	transform: scale(1.09); /* DEFINE A ESCALA QUE A ANIMAÇÃO VAI CRESCER */
-}
-
-/* CONFIGURAÇÃO DAS IMAGENS DA NAVEGAÇÃO */
-
-.nav-categorias img {
-	margin-right: 13px; /* DEFINE A MARGEM A DIREITA */
-}
-
-
-
-/* CONFIGURAÇÃO DA DIV RODAPÉ */
-
-
 
 /* CONFIGURAÇÕES DA PÁGINA DE PRODUTOS: */
 
-
-
-.fundo-carrinho {
-	margin-top: 30px;
-	background-color: #fff; /* DEFINE A COR DE FUNDO */
-	height: 80%; /* DEFINE A ALTURA DO MEU BACKGROUND */
-	width: 95%; /* DEFINE A LARGURA DO MEU BACKGROUND */
-	padding: 29px; /* DEFINE A MARGEM INTERIOR DO MEU BACKGROUND */
-	border-radius: 68px; /* DEFINE A CURVATURA DA BORDA DO MEU BACKGROUND */
-	display: flex;
-	border: 3px solid #fec9c3;
-	box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
-	flex-direction: column;
-}
-
-#meu-carrinho {
-	margin-top: 25px;
-	display: flex;
-	justify-content: center;
-
-}
-
-.titulo-carrinho {
-	align-self: center;
-}
-
-.itens-adiconados {
-	width: 100%;
-  	border-collapse: collapse;
-}
-
-.table-head-item {
-	text-align: start;
-	border-bottom: 1px solid var(--gray);
-	padding-bottom: 6px;
-	text-transform: uppercase;
-	font-size: 23px;
-}
-
-.second-col,
-.third-col {
-  width: 26%;
-}
-
-.cart-product td {
-	padding: 8px 0;
-}
-
-.product-identification {
-	display: flex;
-	align-items: center;
-}
-
-.cart-product-image {
-	width: 120px;
-	height: 120px;
-	border-radius: 20px;
-}
-
-.cart-product-title {
-	margin-left: 16px;
-	font-size: 18px;
-}
-
-.cart-product-price {
-	font-family: "Raleway", sans-serif;
-}
-
-.product-qtd-input {
-	width: 48px;
-	height: 34px;
-	border-radius: 6px;
-	border: 2px solid var(--blue);
-	text-align: center;
-	background: #eee;
-}
-
-.remove-product-button {
-	margin-left: 12px;
-	background: #f08f84;
-	font-weight: bold;
-	color: var(--white);
-	padding: 10px 8px;
-	border: 0;
-	border-radius: 6px;
-
-	transition: filter 0.2s;
-}
-
-.remove-product-button:hover {
-	filter: brightness(0.8);
-}
-
-.cart-total-container {
-	border-top: 1px solid var(--gray);
-	text-align: end;
-	padding: 6px 16px 0 0;
-	font-size: 18px;
-}
-
-.cart-total-container strong {
-	margin-right: 12px;
-}
-
-.purchase-button {
-	display: flex;
-	margin-left: 442px;
-	background: var(--blue);
-	background-color: #f08f84;
-	width: 240px;
-	color: var(--white);
-	border: 0;
-	border-radius: 6px;
-	padding: 16px 20px;
-	text-transform: uppercase;
-	font-size: 20px;
-	font-weight: bold;
-
-	transition: filter 0.2s;
-}
-
-.purchase-button:hover {
-	filter: brightness(0.8);
-}
 
 .caixa-sobre-nos {
 	display: flex;
@@ -449,103 +194,6 @@ width: 100%;
     width: 100%;
     justify-content: flex-start;
     column-gap: 16px;
-}
-
-/* CONFIGURAÇÕES DO CARRINHO */
-
-.itens-carrinho p {
-	font-size: 0.875em;
-	padding: 10px 0px;
-}
-
-.meucarrinho h2 {
-	font-family: "Manrope";
-}
-
-.meucarrinho p {
-	font-family: "Manrope";
-}
-
-.total_container {
-	align-items: stretch;
-	border: 1px solid #f08f84;
-	padding: 16px;
-	border-radius: 5px;
-	margin-bottom: 15px;
-	font-family: "Manrope";
-}
-
-.botao-pagamento {
-	margin-bottom: 15px;
-	width: 100%;
-	font-size: 20px;
-	padding: 10px 0px;
-	background-color: #f08f84;
-	border-radius: 13px;
-}
-
-.btn-formulario {
-	margin-bottom: 15px;
-	width: 100px;
-	font-size: 20px;
-	padding: 10px 0px;
-	background-color: #f08f84;
-	border-radius: 11px;
-	height: 45px;
-	align-self: flex-end;
-}
-
-.btn-formulario-cadastro {
-	margin-bottom: 15px;
-	width: 100px;
-	font-size: 20px;
-	padding: 10px 0px;
-	background-color: #f08f84;
-	border-radius: 11px;
-	height: 45px;
-	align-self: flex-end;
-}
-
-.checkout-grid {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.total {
-	padding-bottom: 10px;
-
-}
-
-.total:nth-child(2) h3{
-	font-size: 14px;
-	font-weight: 600;
-}
-
-.total:nth-child(3){
-	border-top: 1px solid;
-	padding-top: 5px;
-}
-
-.product.text-container.page-title-small {
-	margin-top: 24px;
-}
-
-.product.text-container {
-	margin: 10px 0px;
-}
-
-.product.text-container h4 {
-	font-weight: 400;
-	font-size: 0.875em;
-	padding-bottom: 5px;
-}
-
-.product.main-text {
-	font-size:1.2em
-}
-
-.main-text {
-	border-bottom: 1px solid black;
 }
 
 /* product page grid */
@@ -724,23 +372,6 @@ width: 100%;
 }
 
 /* CONFIGURAÇÃO DE COMPRA CONFIRMADA */
-
-.icone-compra-confirmada img {
-	height: 100px;
-	padding: 40px;
-}
-
-.pg-compra-confirmada {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 200px;
-	margin-top: 200px;
-}
-
-.pg-compra-confirmada h2 {
-	font-family: "Manrope";
-}
 
 .perfil {
 	display: flex;

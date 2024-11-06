@@ -1,0 +1,42 @@
+/* CONFIGURAÇÃO DA MINHA AREA DE NAVEGAÇÃO */
+
+.nav-categorias {
+	background-color: #fec9c3; /* DEFINE A COR FO FUNDO DA MINHA AREA */
+	justify-content: space-around; /* DEFINE O ESPAÇAMENTO DOS ITENS DENTRO DA MINHA AREA */
+	align-items: center; /* DEFINE A CENTRALIZAÇÃO DOS ITENS */
+	display: flex; /* DEFINE COMO CAIXA FLEXÍVEL */
+	border-radius: 50px; /* DEFINE O ARREDONDAMENTO DAS BORDAS */
+}
+
+/* CONFIGURAÇÃO DO QUE TEM DENTRO DA NAVEGAÇÃO */
+
+.nav-categorias ul {
+	display: flex; /* DEFINE COMO CAIXA FLEXÍVEL */
+	font-family: "Carattere"; /* DEFINE A FONTE DO TEXTO */
+	font-size: 40px; /* DEFINE O TAMANHO DO TEXTO */
+	align-items: center; /* DEFINE A CENTRALIZAÇÃO */
+}
+
+/* CONFIGURAÇÃO DO LI DA MINHA NAVEGAÇÃO */
+
+.nav-categorias li {
+	margin-left: 80px; /* DEFINE A MARGEM A ESQUERDA */
+	display: flex; /* DEFINE COMO CAIXA FLEXÍVEL */
+	justify-content: center; /* DEFINE O ESPAÇAMENTO DOS ITENS */
+	align-items: center; /* DEFINE O ALINHAMENTO DOS ITENS AO CENTRO */
+	transition: all 0.5s ease; /* DEFINE A VELOCIDADE DA ANIMAÇÃO POSTA */
+}
+
+.nav-categorias li span {
+	margin-top: 8px; /* DEFINE A MARGEM DO TOPO */
+}
+
+.nav-categorias li:hover {
+	transform: scale(1.09); /* DEFINE A ESCALA QUE A ANIMAÇÃO VAI CRESCER */
+}
+
+/* CONFIGURAÇÃO DAS IMAGENS DA NAVEGAÇÃO */
+
+.nav-categorias img {
+	margin-right: 13px; /* DEFINE A MARGEM A DIREITA */
+}

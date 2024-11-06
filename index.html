@@ -4,99 +4,101 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Hello Coquetty!</title>
-
+	
+		<!-- Conexão com Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		
+		<!-- Fontes utilizadas no projeto -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"/>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"/>
 		<link href="https://fonts.googleapis.com/css2?family=Manuale:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
 		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Manuale:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+		
+		<!-- Link para o CSS do projeto -->
 		<link rel="stylesheet" href="./styles/styles.css" />
+		
+		<!-- Script do Home Page (com 'defer' para carregar após o HTML) -->
 		<script type="module" src="./scripts/home.js" defer></script>
 	</head>
+	
 
 	<body>
 		<div class="fundo"> 
 			<header>
-				<section class="barra-pesquisa"> 
-					<div id="logo">
-						<a href="./index.html"><img src="/images/HOME/hello kitty.png" alt="Logomarca Hello Coquetty"/></a>
+				<section class="barra-pesquisa">
+				  <div id="logo">
+					<a href="./index.html"><img src="/images/HOME/hello kitty.png" alt="Logomarca Hello Coquetty"/></a>
+				  </div>
+			  
+				  <div id="titulo">
+					<a href="./index.html"><h1 id="texto">Hello Coquetty!</h1></a>
+				  </div>
+			  
+				  <div id="busca">
+					<input type="text" id="txtBusca" placeholder="Navegue pela Hello Coquetty..."/>
+					<div><img src="/images/HOME/search.png" id="btnBusca" alt="Buscar" /></div>
+				  </div>
+			  
+				  <!-- Ícone do Menu Hamburguer -->
+				  <div id="menu-hamburguer" class="menu-hamburguer">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				  </div>
+			  
+				  <!-- Menu escondido inicialmente -->
+				  <nav id="nav-menu" class="nav-categorias">
+					<ul>
+					  <li><a href="./carrinho.html"><img src="/images/HOME/carrinho-de-compras.png" alt="Carrinho de compras"/> Carrinho</a></li>
+					  <li><a href=""><img src="/images/HOME/silhueta-em-forma-de-coracao.png" alt="Favoritos"/> Favoritos</a></li>
+					  <li><a href="/usuario.html"><img src="/images/HOME/usuario-home.png" alt="Usuário" /> Usuário</a></li>
+					</ul>
+				  </nav>
+				</section>
+			  </header>
+			  
+	
+			<main id="homepage">
+				<section><h2>LANÇAMENTOS</h2></section>
+				<div class="cartaz"><img src="/images/HOME/banner 50 anos.png" alt="Aniversário de 50 anos da Hello Kitty."/></div>
+	
+				<section><h2>PROMOÇÕES</h2></section> 
+				<div class="produto" id="promocao"></div>
+	
+				<div class="cartaz"><img src="/images/HOME/banner sanrio.png" alt="Banner Sanrio"/></div>
+	
+				<section><h2>NOVIDADES</h2></section> 
+				<div id="novidades"></div> <!-- Os conteúdo de dentro dessa div são inseridos a partir do home.js -->
+			</main>
+	
+			<footer>
+				<section class="rodape">
+					<div>
+						<h3 id="inst">Institucional</h3>  
+						<a href="sobre.html"><p>Sobre nós</p></a>
+						<a href="fale.html"><p>Fale conosco</p></a>
+						<a href="trocas.html"><p>Política de trocas</p></a>
+						<a href="privacidade.html"><p>Política de privacidade</p></a>
 					</div>
-					<div id="titulo">
-						<a href="./index.html"><h1 id="texto">Hello Coquetty!</h1></a>
+	
+					<div>
+						<h3 id="atend">Atendimento</h3>
+						<p>Diariamente das 9h às 22h</p>
+						<p><img id="wpp1" src="images/HOME/icone wpp 1.png" alt="Logo WhatsApp"/>(19) 99999-9999</p>
+						<p><img id="wpp2" src="images/HOME/icone wpp 1.png" alt="Logo WhatsApp"/>(19) 99999-9999</p>
 					</div>
-					<div id="busca">
-						<input type="text" id="txtBusca" placeholder="Navegue pela Hello Coquetty..."/>
-						<div><img src="/images/HOME/search.png" id="btnBusca" alt="Buscar" /></div>
-					</div>
-
-					<div id="menu-itens">
-						<a href="./carrinho.html"><img id="carrinho" src="/images/HOME/carrinho-de-compras.png" alt="carrinho"/></a>
-						<a href=""><img id="favoritos" src="/images/HOME/silhueta-em-forma-de-coracao.png" alt="favoritos"/></a>
-						<a href="/usuario.html"><img id="usuario" src="/images/HOME/usuario-home.png" alt="usuário" /></a>
+	
+					<div>
+						<h3 id="redes">Redes sociais</h3>
+						<p>Acompanhe todas as novidades através das nossas redes sociais</p>
+						<img id="ig" src="images/HOME/icone instagram.png" alt="Logo Instagram"/>
+						<img id="ttk" src="images/HOME/icone tiktok.png" alt="Logo TikTok"/>
 					</div>
 				</section>
-
-				<nav class="nav-categorias">
-					<ul>
-						<li>
-							<a href="./toys.html">
-								<img src="/images/HOME/icone brinquedos.png" alt="Funko Hello Kitty"/>
-								<span>toys</span>
-							</a>
-						</li>
-						<li>
-							<a href="./accessories.html"><img src="/images/HOME/icone acessórios.png" alt="Presilhas Sanrio"/>
-								<span>accessories</span>
-							</a>
-						</li>
-						<li>
-							<a href="./sanrio.html">
-								<img src="/images/HOME/icone sanrio.png" alt="Turma Sanrio"/>
-								<span>sanrio</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-
-			<main>
-				<section class="lancamento"><h2>LANÇAMENTOS</h2></section>
-					<div class="cartaz"><img src="/images/HOME/banner 50 anos.png" alt="Aniversário de 50 anos da Hello Kitty."/></div>
-
-					<section class="promocao"><h2>PROMOÇÕES</h2></section> 
-					<div class="produto" id="promocao"></div>
-
-					<div class="cartaz"><img src="/images/HOME/banner sanrio.png" alt="."/></div>
-
-					<section class="novidade"><h2>NOVIDADES</h2></section> 
-					<div class="produto" id="novidades"></div>
-			</main>
-
-			<footer>
-                <section class="rodape">
-                    <div><h3 id="inst">Institucional</h3>  
-                        <a href="sobre.html"><p>Sobre nós</p></a>
-                        <a href="fale.html"><p>Fale conosco</p></a>
-                        <a href="trocas.html"><p>Política de trocas</p></a>
-                        <a href="privacidade.html"></s><p>Política de privacidade</p></a>
-                    </div>
-
-                    <div><h3 id="atend">Atendimento</h3>
-                        <p>Diariamente das 9h as 22h</p>
-                        <p><img id="wpp1" src="images/HOME/icone wpp 1.png" alt="Logo WhatsApp"/>(19) 99999-9999</p>
-                        <p><img id="wpp2" src="images/HOME/icone wpp 1.png" alt="Logo WhatsApp"/>(19) 99999-9999</p>
-                    </div>
-
-                    <div>
-                        <h3 id="redes">Redes sociais</h3>
-                        <p>Acompanhe todas as novidades através das nossas redes sociais</p>
-                        <img id="ig" src="images/HOME/icone instagram.png" alt="Logo Instagram"/>
-                        <img id="ttk" src="images/HOME/icone tiktok.png" alt="Logo TikTok"/>
-                    </div>
-                </section>
-                <h6 id="direitos">Todos os direitos reservados - DESENVOLVIDO POR DESENVOLVIMENTO DE SISTEMAS: SENAI "Roberto Mange"</h6>
+				<h6 id="direitos">Todos os direitos reservados - DESENVOLVIDO POR DESENVOLVIMENTO DE SISTEMAS: SENAI "Roberto Mange"</h6>
 			</footer> 
 		</div> 
-	</body> 
-</html> 
+	</body>
+</html>
+	
